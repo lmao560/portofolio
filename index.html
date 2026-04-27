@@ -3,214 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link
             href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@300;400;500;600;700&display=swap"
             rel="stylesheet">
         <title>Portofolio</title>
-
-        <style>
-
-            body{
-                margin: 0px;
-                padding: 0px;
-            }
-
-            header{
-                background-color: #030308;
-                padding-top: 25px;
-                padding-bottom: 250px;
-                padding-right: 100px;
-                padding-left: 100px;
-            }
-
-            h1, h2, h3{
-                font-family: "Press Start 2P";
-            }
-
-            h1{
-                font-size: 24px;
-                letter-spacing: -3px;
-                color: #15F5BA;
-                text-shadow: 0px 0px 7px #15F5BA;
-                span {
-                    color: #D91656 ;
-                    text-shadow: 0px 0px 7px #D91656;
-                }
-            }
-
-            .container{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-
-            .right-side{
-                display: flex;
-                align-items: center;
-                gap: 30px;
-            }
-
-            .cta{
-                display: flex;
-                flex-direction: row;
-            }
-            
-            .container .cta{
-                list-style-type: none;
-                font-family: "Press Start 2P";
-                font-size: 20px;
-                letter-spacing: -2px;
-                gap: 20px;
-            }
-            nav a{
-                text-decoration: none;
-                color: #F0F3FF;
-            }
-
-            .resume-button{
-                background-color: transparent;
-                color: #15F5BA;
-                text-shadow: 0px 0px 7px #15F5BA;
-                font-family: "Press Start 2P";
-                border: 2px solid #15F5BA;
-                border-radius: 5px;
-                box-shadow: 0px 0px 7px #15F5BA;
-                padding: 10px 20px;
-            }
-
-            .welcome-border{
-                background-color: transparent;
-                width: fit-content;
-                color: #15F5BA;
-                text-shadow: 0px 0px 7px #15F5BA;
-                font-family: "Press Start 2P";
-                font-size: 13px;
-                border: 2px solid #15F5BA;
-                border-radius: 5px;
-                box-shadow: 0px 0px 7px #15F5BA;
-                margin-bottom: 20px;
-                padding: 10px 20px;
-            }
-
-            #home{
-                background-color: #030308;
-                padding-right: 100px;
-                padding-left: 100px;
-                padding-bottom: 100px;
-            }
-
-            #home p{
-                display: flex;
-                max-width: 700px;
-                color: #F0F3FF;
-                font-family: "Rajdhani";
-                font-size: 30px;
-                text-align: justify;
-            }
-
-            #home ul{
-                font-size: 16px;
-                display: flex;
-                list-style-type: none;
-                font-family: "Press Start 2P";
-                padding: 0px;
-                margin-bottom: 30px;
-                gap: 20px;
-            }
-
-            .home-wrapper{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 50px;
-            }
-
-            .home-content{
-                flex: 1;
-            }
-
-            .view-project{
-                background-color: #07cb002c;
-                border: 2px solid #08CB00;
-                text-align: justify;
-                border-radius: 5px;
-                box-shadow: 0px 0px 7px #08CB00 ;
-                padding: 15px 20px;
-            }
-
-            .view-project a{
-                color: #08CB00;
-                text-decoration: none;
-            }
-
-            .hire-me{
-                background-color: #d9165738;
-                border: 2px solid #D91656;
-                text-align: justify;
-                border-radius: 5px;
-                box-shadow: 0px 0px 7px #D91656 ;
-                padding: 15px 20px;
-            }
-
-            .hire-me a{
-                color: #D91656;
-                text-decoration: none;
-            }
-
-            .brand-logo a{
-                border: 2px solid #F0F3FF;
-                border-radius: 5px ;
-                padding: 15px;
-            }
-
-            .home-image img{
-                max-width: 400px;
-                border-radius: 12px;
-                box-shadow: 0px 0px 7px #F0F3FF;
-            }
-
-             /* ABOUT SECTION */
-
-            #about{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: 0px;
-                background-color: #070712;
-                padding-top: 50px ;
-                padding-left: 100px;
-                padding-right: 100px;
-            }
-
-            .heading-border{
-                background-color: #07cb002c;
-                justify-content: center;
-                width: fit-content;
-                color: #08CB00;
-                text-align: center;
-                border: 2px solid #08CB00;
-                border-radius: 5px;
-                box-shadow: 0px 0px 7px #08CB00;
-                padding: 0px 10px;
-            }
-
-            #about h2{
-                color: #F0F3FF;
-                letter-spacing: 5px;
-
-                span{
-                    color: #08CB00;
-                    text-shadow: 0px 0px 7px #08CB00;
-                }
-            }
-
-            
-    
-        </style>
-
     </head>
     <body>
         <!-- ===============================
@@ -260,10 +61,14 @@
                                 <li class="hire-me"><a href="#">HIRE ME</a></li>
                             </ul>
                             <ul class="brand-logo">
-                                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa-solid fa-envelope"></i></a></li>
+                                <li><a href="#"><i
+                                            class="fa-brands fa-github"></i></a></li>
+                                <li><a href="#"><i
+                                            class="fa-brands fa-linkedin"></i></a></li>
+                                <li><a href="#"><i
+                                            class="fa-brands fa-x-twitter"></i></a></li>
+                                <li><a href="#"><i
+                                            class="fa-solid fa-envelope"></i></a></li>
                             </ul>
                         </nav>
                     </div>
@@ -277,48 +82,92 @@
                ABOUT SECTION
     =============================== -->
             <section id="about">
-                <div>
+                <div class="about-wrapper">
                     <div class="heading-border">
                         <h3>PLAYER PROFILE</h3>
                     </div>
                     <h2>ABOUT <span>ME</span></h2>
-                    <div>
+                    <div class="about-content">
                         <div>
-                            <img src="assets/images/pixel Me.png" alt="MM">
-                            <p>FIRASAMIE</p>
-                            <p>LVL 18, DEV</p>
-    
-                            <div>
-                                <p>EXP</p>
+                            <div class="player-card">
+                                <div style="margin-bottom: 200px;">
+                                    <img class="player-img"
+                                        src="assets/images/Pixel Me.jpg"
+                                        alt="MM">
+                                    <div class="player-name-status">
+                                        <p style="color: #8BE8E5;">FIRASAMIE</p>
+                                        <p style="color: #F8DE22;">LVL 18,
+                                            DEV</p>
+                                    </div>
+                                </div>
+
+                                <div class="exp-container">
+                                    <p style="color: #F8DE22; margin-left: 30px; margin-top: 0px;">EXP</p>
+                                    <div class="exp-outer">
+                                        <div class="exp-inner"></div>
+                                    </div>
+                                </div>
                             </div>
+
+                            <button>DOWNLOAD RESUME</button>
+                        </div>
+
+                        <div class="about-paraghraph">
+                            <p style="margin-top: 0px ;">Welcome to my local
+                                environment! I'm
+                                <span>Firdaus</span>, an
+                                aspiring
+                                Full-Stack Developer and Creative Coder who
+                                believes
+                                that
+                                every line of code is a step toward a new
+                                morning.
+                                Currently
+                                navigating my journey in Software Engineering,
+                                I’m
+                                obsessed
+                                with bridging the gap between robust backend
+                                logic
+                                and the
+                                nostalgic charm of pixel-perfect interfaces.
+                            </p>
+                            <p>
+                                My journey started with a simple curiosity that
+                                evolved into
+                                a mission: turning complex problems into
+                                elegant,
+                                functional
+                                digital stories. Whether I'm architecting
+                                systems
+                                with
+                                Laravel or crafting mobile experiences with
+                                Flutter,
+                                I
+                                strive to build software that doesn't just work,
+                                but
+                                also
+                                resonates.
+                            </p>
+                            <p>
+                                When the compiler is at rest, you’ll find me
+                                diving
+                                deep
+                                into 80s vintage aesthetics, exploring the world
+                                of
+                                clipping
+                                content, or finding inspiration in the
+                                discipline of
+                                my
+                                favorite creators. I believe that great software
+                                is
+                                a window
+                                to a better perspective—and I’m here to build
+                                that
+                                view, one
+                                pixel at a time.
+                            </p>
                         </div>
                     </div>
-                    <button>DOWNLOAD RESUME</button>
-    
-                    <p>Welcome to my local environment! I'm <span>Firdaus</span>, an
-                        aspiring
-                        Full-Stack Developer and Creative Coder who believes that
-                        every line of code is a step toward a new morning. Currently
-                        navigating my journey in Software Engineering, I’m obsessed
-                        with bridging the gap between robust backend logic and the
-                        nostalgic charm of pixel-perfect interfaces.
-                    </p>
-                    <p>
-                        My journey started with a simple curiosity that evolved into
-                        a mission: turning complex problems into elegant, functional
-                        digital stories. Whether I'm architecting systems with
-                        Laravel or crafting mobile experiences with Flutter, I
-                        strive to build software that doesn't just work, but also
-                        resonates.
-                    </p>
-                    <p>
-                        When the compiler is at rest, you’ll find me diving deep
-                        into 80s vintage aesthetics, exploring the world of clipping
-                        content, or finding inspiration in the discipline of my
-                        favorite creators. I believe that great software is a window
-                        to a better perspective—and I’m here to build that view, one
-                        pixel at a time.
-                    </p>
                 </div>
             </section>
         </main>

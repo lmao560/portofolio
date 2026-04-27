@@ -1,0 +1,256 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: #030308;
+    padding-top: 25px;
+    padding-bottom: 250px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Press Start 2P";
+}
+
+h1 {
+    font-size: 24px;
+    letter-spacing: -3px;
+    color: #15F5BA;
+    text-shadow: 0px 0px 7px #15F5BA;
+
+    span {
+        color: #D91656;
+        text-shadow: 0px 0px 7px #D91656;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-side {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: row;
+}
+
+.container .cta {
+    list-style-type: none;
+    font-family: "Press Start 2P";
+    font-size: 20px;
+    letter-spacing: -2px;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #F0F3FF;
+}
+
+.resume-button {
+    background-color: transparent;
+    color: #15F5BA;
+    text-shadow: 0px 0px 7px #15F5BA;
+    font-family: "Press Start 2P";
+    border: 2px solid #15F5BA;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px #15F5BA;
+    padding: 10px 20px;
+}
+
+.welcome-border {
+    background-color: transparent;
+    width: fit-content;
+    color: #15F5BA;
+    text-shadow: 0px 0px 7px #15F5BA;
+    font-family: "Press Start 2P";
+    font-size: 13px;
+    border: 2px solid #15F5BA;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px #15F5BA;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+}
+
+#home {
+    background-color: #030308;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+}
+
+#home p {
+    display: flex;
+    max-width: 700px;
+    color: #F0F3FF;
+    font-family: "Rajdhani";
+    font-size: 30px;
+    text-align: justify;
+}
+
+#home ul {
+    font-size: 16px;
+    display: flex;
+    list-style-type: none;
+    font-family: "Press Start 2P";
+    padding: 0px;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.home-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.home-content {
+    flex: 1;
+}
+
+.view-project {
+    background-color: #07cb002c;
+    border: 2px solid #08CB00;
+    text-align: justify;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px #08CB00;
+    padding: 15px 20px;
+}
+
+.view-project a {
+    color: #08CB00;
+    text-decoration: none;
+}
+
+.hire-me {
+    background-color: #d9165738;
+    border: 2px solid #D91656;
+    text-align: justify;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px #D91656;
+    padding: 15px 20px;
+}
+
+.hire-me a {
+    color: #D91656;
+    text-decoration: none;
+}
+
+.brand-logo a {
+    border: 2px solid #F0F3FF;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.home-image img {
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 7px #F0F3FF;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    margin: 0px;
+    background-color: #070712;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+.heading-border {
+    background-color: #07cb002c;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    color: #08CB00;
+    text-align: center;
+    border: 2px solid #08CB00;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px #08CB00;
+    padding: 0px 10px;
+}
+
+#about h2 {
+    color: #F0F3FF;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+
+    span {
+        color: #08CB00;
+        text-shadow: 0px 0px 7px #08CB00;
+    }
+}
+
+.about-content {
+    display: flex;
+}
+
+.player-card {
+    background-color: #0f0f2070;
+    font-family: "Press Start 2P";
+    border: 2px solid #0F0F20;
+    width: fit-content;
+    margin-right: 100px;
+    margin-bottom: 25px;
+}
+
+.player-img {
+    height: 111px;
+    width: 111px;
+    margin: 30px 150px;
+    border: 2px solid #08CB00;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px #08CB00;
+}
+
+.player-name-status{
+    text-align: center;
+}
+
+.about-paraghraph {
+    font-family: "Rajdhani";
+    color: #F0F3FF;
+    font-size: 30px;
+    text-align: justify;
+
+    span {
+        color: #08CB00;
+        font-weight: bold;
+        text-shadow: 0px 0px 7px #08CB00;
+    }
+}
+
+.exp-container{
+    display: flex;
+    gap: 11px;
+    
+}
+
+.exp-outer{
+    border: 2px solid #08CB00;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px;
+}
+
+.exp-inner{
+    height: 13px;
+    width: 300px;
+}

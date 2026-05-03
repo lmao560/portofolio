@@ -211,6 +211,8 @@ nav a {
     margin-bottom: 25px;
 }
 
+
+
 .player-img {
     height: 111px;
     width: 111px;
@@ -293,200 +295,64 @@ nav a {
     }
 }
 
-/* ============================================================
-   SKILL TREE — style.css
-   ============================================================ */
-
-/* ---------- Wrapper ---------- */
-/* .skill-tree-wrap {
-  background: #050a0e;
-  padding: 48px 40px 56px;
-  position: relative;
-  overflow: hidden;
-  border: 1px solid rgba(0, 255, 120, 0.1);
-} */
-
-/* Dot-grid background */
-/* .skill-tree-wrap::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(0, 255, 160, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 255, 160, 0.035) 1px, transparent 1px);
-  background-size: 32px 32px;
-  pointer-events: none;
-} */
-
-/* ---------- Canvas (positions SVG overlay) ---------- */
-.tree-canvas {
-  position: relative;
-  width: 616px;
+.main-neon-frame{
+    display: grid;
+    padding: 30px;
+    grid-template-columns: 300px 1fr;
+    gap: 0;
+    border: 2px solid #08CB00;
+    border-radius: 5px;
+    box-shadow: 0px 0px 7px #08CB00;
+    font-family: "Press Start 2P";
 }
 
-/* ---------- SVG connector layer ---------- */
-.connector-svg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  overflow: visible;
+.char-nickname{ display:flex; color: #F0F3FF; justify-content: center; margin: 15px; }
+
+.pixel-char{
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #08CB00;
+    border-radius: 8px;
+    box-shadow: 0 0 7px #08CB00;
+    image-rendering: pixelated;
 }
 
-/* Glow on connector lines */
-.line-glow {
-  filter: drop-shadow(0 0 3px #00ff99) drop-shadow(0 0 7px #00ff99);
+.hp-container, .mp-container {
+    display: flex;
+    align-items: center;
+    gap: 11px;   
+    color: #F0F3FF;
+    margin-bottom: 10px;
 }
 
-/* Animated dash on connector lines */
-@keyframes pulse-dash {
-  0%   { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: -30; }
+
+.hp-outer, .mp-outer{
+    border: 2px solid #bcbcc4;
+    border-radius: 3px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px;
 }
 
-.pulse-line {
-  stroke-dasharray: 12 8;
-  animation: pulse-dash 0.9s linear infinite;
+.hp-inner, .mp-inner{
+    display: flex;
+    height: 20px;
+    width: 257px;
+    overflow: hidden;
+    padding: 0;
 }
 
-/* ---------- Root node ---------- */
-.root-node {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 96px;
-  height: 96px;
-  border: 2px solid #00ff99;
-  background: #071510;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  /* Chamfered octagon shape */
-  clip-path: polygon(
-    10px 0%, calc(100% - 10px) 0%,
-    100% 10px, 100% calc(100% - 10px),
-    calc(100% - 10px) 100%, 10px 100%,
-    0% calc(100% - 10px), 0% 10px
-  );
-  box-shadow:
-    0 0 24px rgba(0, 255, 120, 0.35),
-    inset 0 0 16px rgba(0, 255, 120, 0.1);
+.hp-point{
+    background-color: #ff0000 ;
+    border: 2px solid #363638;
+    border-radius: 2px;
+    height: 16px;
+    width: 12px;
 }
 
-.root-node .node-icon { font-size: 28px; }
-.root-node .node-label {
-  font-size: 13px;
-  font-weight: 700;
-  color: #00ffcc;
-  text-shadow: 0 0 10px rgba(0, 255, 200, 0.9);
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-}
 
-/* ---------- Branch container ---------- */
-.branches {
-  display: flex;
-  flex-direction: column;
-  gap: 28px;
-  margin-left: 120px;
-}
 
-/* ---------- Branch row ---------- */
-.branch-row {
-  display: flex;
-  align-items: center;
-}
 
-/* Remove duplicate left border between siblings */
-.branch-row .skill-node + .skill-node {
-  border-left: none;
-}
-
-/* ---------- Skill node ---------- */
-.skill-node {
-  position: relative;
-  width: 108px;
-  height: 68px;
-  border: 1.5px solid #00ff99;
-  background: #0a1a10;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  cursor: pointer;
-  /* Chamfered octagon shape */
-  clip-path: polygon(
-    6px 0%, calc(100% - 6px) 0%,
-    100% 6px, 100% calc(100% - 6px),
-    calc(100% - 6px) 100%, 6px 100%,
-    0% calc(100% - 6px), 0% 6px
-  );
-  transition: background 0.2s, box-shadow 0.2s, border-color 0.2s;
-}
-
-.skill-node:hover {
-  background: #0f2e1a;
-  box-shadow:
-    0 0 18px rgba(0, 255, 120, 0.45),
-    inset 0 0 10px rgba(0, 255, 120, 0.1);
-  border-color: #00ffcc;
-}
-
-.skill-node:hover .node-label {
-  color: #00ffcc;
-  text-shadow: 0 0 8px rgba(0, 255, 180, 0.8);
-}
-
-/* ---------- Node content ---------- */
-.node-icon {
-  font-size: 18px;
-  line-height: 1;
-}
-
-.node-label {
-  font-size: 11px;
-  font-weight: 700;
-  color: #00ff99;
-  letter-spacing: 0.08em;
-  text-shadow: 0 0 6px rgba(0, 255, 120, 0.5);
-  text-transform: uppercase;
-  transition: color 0.2s, text-shadow 0.2s;
-}
-
-/* ---------- Tooltip ---------- */
-.tooltip {
-  position: absolute;
-  bottom: calc(100% + 8px);
-  left: 50%;
-  transform: translateX(-50%);
-  background: #0a1a10;
-  border: 1px solid #00ff99;
-  color: #00ff99;
-  font-size: 10px;
-  padding: 5px 10px;
-  white-space: nowrap;
-  letter-spacing: 0.06em;
-  pointer-events: none;
-  opacity: 0;
-  z-index: 10;
-  text-shadow: 0 0 6px rgba(0, 255, 120, 0.5);
-  box-shadow: 0 0 10px rgba(0, 255, 120, 0.2);
-  clip-path: polygon(
-    4px 0%, calc(100% - 4px) 0%,
-    100% 4px, 100% calc(100% - 4px),
-    calc(100% - 4px) 100%, 4px 100%,
-    0% calc(100% - 4px), 0% 4px
-  );
-  transition: opacity 0.15s;
-}
-
-.skill-node:hover .tooltip {
-  opacity: 1;
-}
 

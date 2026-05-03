@@ -222,7 +222,7 @@ nav a {
     box-shadow: 0px 0px 7px #08CB00;
 }
 
-.player-name-status{
+.player-name-status {
     text-align: center;
 }
 
@@ -239,25 +239,25 @@ nav a {
     }
 }
 
-.exp-container{
+.exp-container {
     display: flex;
     gap: 11px;
-    
+
 }
 
-.exp-outer{
+.exp-outer {
     border: 2px solid #08CB00;
     width: fit-content;
     height: fit-content;
     padding: 0px;
 }
 
-.exp-inner{
+.exp-inner {
     height: 13px;
     width: 300px;
 }
 
-.resume-download{
+.resume-download {
     background-color: #07cb0036;
     color: #08CB00;
     border: 2px solid #08CB00;
@@ -270,35 +270,33 @@ nav a {
 
 /* SKILLS STYE */
 
-#skills{
+#skills {
     background-color: #030308;
-    padding-top: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 50px 100px 50px 100px;
 }
 
-#skills h3{
+#skills h3 {
     margin-left: 30px;
     margin-right: 30px;
 }
 
-#skills h2{
+#skills h2 {
     font-family: "Press Start 2P";
     letter-spacing: 5px;
     font-size: 32px;
     color: #F0F3FF;
     text-align: center;
     margin-bottom: 50px;
-    span{
+
+    span {
         color: #08CB00;
         text-shadow: 0px 0px 7px #08CB00;
     }
 }
 
-.main-neon-frame{
+.main-neon-frame {
     display: grid;
-    padding: 30px;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: auto 1fr;
     gap: 0;
     border: 2px solid #08CB00;
     border-radius: 5px;
@@ -306,29 +304,44 @@ nav a {
     font-family: "Press Start 2P";
 }
 
-.char-nickname{ display:flex; color: #F0F3FF; justify-content: center; margin: 15px; }
+.character-pane{
+    display: grid;
+    border-right: 2px solid #08CB00 ;
+    box-shadow:  0 0 7px #08CB00 ;
+    padding-right: 50px;
+    padding-left: 50px;
+}
 
-.pixel-char{
+.char-nickname {
+    display: flex;
+    color: #F0F3FF;
+    justify-content: center;
+    margin: 15px;
+}
+
+.pixel-char {
     width: 100%;
-    max-width: 400px;
+    max-width: 250px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border: 2px solid #08CB00;
     border-radius: 8px;
     box-shadow: 0 0 7px #08CB00;
     image-rendering: pixelated;
 }
 
-.hp-container, .mp-container {
+.hp-container,
+.mp-container {
     display: flex;
     align-items: center;
-    gap: 11px;   
+    gap: 11px;
     color: #F0F3FF;
     margin-bottom: 10px;
 }
 
 
-.hp-outer, .mp-outer{
+.hp-outer,
+.mp-outer {
     border: 2px solid #bcbcc4;
     border-radius: 3px;
     width: fit-content;
@@ -336,23 +349,106 @@ nav a {
     padding: 0px;
 }
 
-.hp-inner, .mp-inner{
+.hp-inner,
+.mp-inner {
     display: flex;
-    height: 20px;
-    width: 257px;
-    overflow: hidden;
+    max-height: 20px;
+    width: fit-content;
+    /* overflow: hidden; */
     padding: 0;
 }
 
-.hp-point{
-    background-color: #ff0000 ;
+.hp-point {
+    background-color: #ff0000;
     border: 2px solid #363638;
     border-radius: 2px;
+    box-shadow: 0 0 11px #ff0000;
     height: 16px;
     width: 12px;
 }
 
+.mp-point {
+    background-color: #59CAC7;
+    border: 2px solid #363638;
+    border-radius: 2px;
+    box-shadow: 0 0 11px #59CAC7;
+    height: 16px;
+    width: 12px;
+}
 
+.char-status {
+    text-align: justify;
+    color: #F0F3FF;
+    font-size: 15px;
 
+    span {
+        color: #08CB00;
+        text-shadow: 0 0 7px #08CB00;
+    }
+}
+
+.skill-pane {
+    display: grid;
+    grid-template-rows: repeat(4, auto)1fr;
+    padding: 40px;
+    gap: 30px;
+    color: #F0F3FF;
+}
+
+.skill-category h3{ 
+    padding: 0;
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 12px;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 70px);
+    padding-left: 30px;
+    gap: 20px;
+}
+
+.skill-box img{
+    width: 70px;
+    height: 70px;
+    display: grid;
+    width: fit-content;
+    padding: 5px;
+    place-items: center;
+    border: 2px solid #F0F3FF;
+    box-shadow: 0 0 7px #F0F3FF;
+    border-radius: 5px;
+}
+
+.potential-skill-grid {
+    display: grid;
+    border: 2px solid #FF3131;
+    border-radius: 5px;
+    box-shadow: 0 0 7px #FF3131;
+    width: 410px;
+    grid-template-columns: repeat(4, 70px);
+    margin-left: 30px;
+    gap: 30px;
+}
+
+.potential-skill-box img{
+    filter: grayscale(100%) opacity(0.5);
+    width: 70px;
+    height: 70px;
+    display: grid;
+    width: fit-content;
+    padding: 5px;
+    place-items: center;
+    border: 2px dashed #ccd1e4;
+    border-radius: 5px;
+    margin: 12px;
+    cursor: help;
+}
+
+.potential-skill-box img:hover{
+    filter: grayscale(0) opacity(1);
+    border-color: #FF3131;
+}
 
 

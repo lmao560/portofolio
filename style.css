@@ -304,10 +304,10 @@ nav a {
     font-family: "Press Start 2P";
 }
 
-.character-pane{
+.character-pane {
     display: grid;
-    border-right: 2px solid #08CB00 ;
-    box-shadow:  0 0 7px #08CB00 ;
+    border-right: 2px solid #08CB00;
+    box-shadow: 0 0 7px #08CB00;
     padding-right: 50px;
     padding-left: 50px;
 }
@@ -395,7 +395,7 @@ nav a {
     color: #F0F3FF;
 }
 
-.skill-category h3{ 
+.skill-category h3 {
     padding: 0;
     margin: 0;
     padding-left: 0;
@@ -409,7 +409,7 @@ nav a {
     gap: 20px;
 }
 
-.skill-box img{
+.skill-box img {
     width: 70px;
     height: 70px;
     display: grid;
@@ -432,7 +432,7 @@ nav a {
     gap: 30px;
 }
 
-.potential-skill-box img{
+.potential-skill-box img {
     filter: grayscale(100%) opacity(0.5);
     width: 70px;
     height: 70px;
@@ -446,9 +446,133 @@ nav a {
     cursor: help;
 }
 
-.potential-skill-box img:hover{
+.potential-skill-box img:hover {
     filter: grayscale(0) opacity(1);
     border-color: #FF3131;
 }
 
+#project {
+    margin: 0px;
+    background-color: #070712;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
 
+#project h2 {
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #F0F3FF;
+
+    span {
+        color: #08CB00;
+        text-shadow: 0 0 7px #08CB00;
+    }
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    place-items: center;
+}
+
+.project-card {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    padding: 20px;
+    gap: 20px;
+    width: fit-content;
+    border: 2px solid #363638;
+    border-radius: 10px;
+    background-color: #0F0F20;
+}
+
+.img-box {
+    width: 350px;
+    height: 200px;
+    background-image: url(assets/images/Asa.jfif);
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #08CB00;
+    box-shadow: 0 0 7px #08CB00;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-title {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 15px;
+    font-family: "Press Start 2P";
+    color: #F0F3FF;
+}
+
+.tech {
+    display: flex;
+    gap: 10px;
+}
+
+.tech-use {
+    font-size: 12px;
+    width: fit-content;
+    border: 2px solid #59CAC7;
+    border-radius: 2px;
+    box-shadow: 0 0 7px #59CAC7;
+    padding: 8px 12px 8px 12px;
+}
+
+.explanation-project p{
+    margin: 0;
+    text-align: justify;
+    font-family: "Rajdhani";
+    color: #F0F3FF;
+    max-width: 350px;
+    font-size: 20px;
+}
+
+.project-category span{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 5px;
+    font-family: "Rajdhani";
+    color: #F0F3FF;
+}
+
+.project-category-list {
+    display: flex;
+    gap: 10px;
+}
+
+.project-category-list i{
+    color: yellow;
+}
+
+#contact {
+    margin: 0px;
+    background-color: #030308;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+}
+
+#contact h2 {
+    letter-spacing: 5px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #F0F3FF;
+
+    span {
+        color: #08CB00;
+        text-shadow: 0 0 7px #08CB00;
+    }
+}
+
+.contact-grid {
+
+}

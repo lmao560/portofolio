@@ -574,5 +574,144 @@ nav a {
 }
 
 .contact-grid {
-
+    display: grid;
+    grid-template-columns: 550px 1fr;
+    gap: 30px;
 }
+
+.information-section-grid {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.information-grid {
+    display: grid;
+    grid-template-rows: repeat(3, 98px);
+    gap: 15px;
+}
+
+.information-section {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.item{
+    display: flex;
+    gap: 20px;
+    border: 2px solid #121226;
+    border-radius: 5px;
+    background-color: #0A0A17;
+    padding: 25px;
+    align-items: center;
+    height: fit-content;
+}
+
+.item i {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #08CB00;
+    border-radius: 3px;
+    box-shadow: 0 0 7px #08CB00;
+    color: #08CB00;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: "Press Start 2P";
+    color: #AEA9A4;
+}
+
+.inner-item span{
+    margin: 0;
+    font-size: 9px;
+    color: #3A425F;
+}
+.inner-item p{
+    margin: 0;
+    font-family: "Rajdhani";
+    font-size: 17px;
+}
+
+.text-style {
+    display: flex;
+    font-family: "Rajdhani";
+    font-size: 17px;
+    align-items: center;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    border: 1px solid #030308;
+    background-color: #08CB00;
+    box-shadow: 0 0 7px #08CB00;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.style-span {
+    color: #3F3642;
+    font-family: "Press Start 2P";
+    font-size: 13px;
+}
+
+.link-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.link-container {
+    border: 2px solid #121226 ;
+    border-radius: 3px;
+    background-color: #0A0A17;
+    padding: 15px;
+    color: #6D7778;
+    font-family: "Rajdhani";
+    font-size: 17px;
+}
+
+.contact-container {
+    border: 2px solid #121226;
+    border-radius: 3px;
+    background-color: #0A0A17;
+    padding: 30px;
+}
+
+.input-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.input-person-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.input-style {
+    display: flex;
+    padding: 20px;
+    gap: 12px;
+    border: 2px solid #121226;
+    border-radius: 3px;
+    background-color: #0A0A17;
+}
+
+.input-style input {
+    background: transparent;
+    border: none;
+    
+}
+
+

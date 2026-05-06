@@ -689,8 +689,11 @@ nav a {
 
 .input-container {
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
     gap: 20px;
+    color: #6D7778;
+    font-family: "Press Start 2P";
+    font-size:  0.8rem;
 }
 
 .input-person-grid {
@@ -706,12 +709,62 @@ nav a {
     border: 2px solid #121226;
     border-radius: 3px;
     background-color: #0A0A17;
+    color: #F0F3FF;
+    margin-top: 20px;
 }
 
 .input-style input {
+    font-family: "Rajdhani";
+    background: transparent;
+    color: #F0F3FF;
+    border: none;
+    outline: none;
+}
+
+.input-style i{
+    display: flex;
+    align-items: center ;
+}
+
+.input-style-large textarea{
+    width: 100%;
     background: transparent;
     border: none;
-    
+    outline: none;
+    color: #F0F3FF;
+    font-family: "Rajdhani";
+    font-size: 1.2rem;
+    resize: none;
 }
+
+.input-style-large {
+    display: flex;
+    padding: 15px;
+    gap: 15px;
+    border: 2px solid #121226;
+    border-radius: 3px;
+    background-color: #0A0A17;
+    align-items: flex-start;
+    min-height: 150px;
+}
+
+.input-style-large i {
+    color: #F0F3FF;
+    margin-top: 5px;
+}
+
+.contact-submit {
+    border: 2px solid #08CB00;
+    border-radius: 3px;
+    box-shadow: 0 0 7px #08CB00;
+    margin-top: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: "Press Start 2P";
+    background: transparent;
+    color: #08CB00;
+}
+
 
 

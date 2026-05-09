@@ -766,5 +766,111 @@ nav a {
     color: #08CB00;
 }
 
+footer {
+    background-color: #05050C;
+    padding: 50px 100px 50px 100px
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    place-items: center;
+}
+
+.footer-grid p {
+    font-family: "Rajdhani";
+    color: #2C2C37;
+    margin: 0;
+}
+
+.red-color { color: red; font-weight: bold; text-shadow: 0 0 7px red;}
+.green-color { color: #08CB00; font-weight: bold; text-shadow: 0 0 7px #08CB00;}
+
+.main-footer-grid {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    place-items: center;
+    color: #474753;
+    font-family: "Rajdhani";
+}
+
+.main-title-footer h1 {
+    font-family: "Press Start 2P";
+    font-size: 20px;
+}
+
+.decoration-grid {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 10px;
+    width: fit-content;
+}
+
+.line-3-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 8px);
+    gap: 2px;
+}
+
+.line-3-1 {
+    height: 25px;
+    width: 7px;
+    background-color: #2B2B42;
+}
+
+.line-3-2 {
+    height: 25px;
+    width: 7px;
+    background-color: #161C2E;
+}
+
+.line-3-3 {
+    height: 25px;
+    width: 7px;
+    background-color: #171E27;
+}
+
+.line-5-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 8px);
+    gap: 2px;
+}
+
+.main-footer-button {
+    border: 2px solid #08CB00;
+    border-radius: 5px;
+    box-shadow: 0 0 7px #08CB00;
+    background-color: transparent;
+}
+
+.main-footer-button a {
+    text-decoration: none;
+    font-family: "Press Start 2P";
+    color: #08CB00;
+    font-size: 7px;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.footer-cta {
+    display: flex;
+    gap: 12px;
+    font-family: "Press Start 2P";
+    text-align: center;
+}
+
+.footer-cta a {
+    text-decoration: none;
+    color: #2C2C37;
+    font-size: 12px;
+}
+
+
+
+
+
+
 
 

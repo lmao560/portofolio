@@ -1,14 +1,61 @@
+:root {
+    /* Primary Colors */
+    --neon-green: #15F5BA;
+    --arcade-green: #08CB00;
+    --neon-red: #D91656;
+    --mana-blue: #59CAC7;
+
+    /* Backgrounds */
+    --bg-dark: #030308;
+    --bg-card: #0F0F20;
+    --bg-input: #0A0A17;
+
+    /* Text */
+    --text-main: #F0F3FF;
+    --text-dim: #6D7778;
+
+    /* Font Size Variables */
+    --fs-h1: clamp(1.5rem, 5vw, 2.5rem);    
+    --fs-h2: clamp(1.2rem, 4vw, 2rem);      
+    --fs-h3: 1rem;                          
+    --fs-body: 1.1rem;                      
+    --fs-label: 0.8rem;                     
+    
+    /* Font Family Variables */
+    --font-retro: "Press Start 2P", cursive;
+    --font-reading: "Rajdhani", sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     padding: 0px;
+
+}
+
+.container-box {
+    width: 90%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header {
-    background-color: #030308;
+    background-color: var(--bg-dark);
     padding-top: 25px;
     padding-bottom: 250px;
-    padding-right: 100px;
-    padding-left: 100px;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 h1,
@@ -18,7 +65,7 @@ h3 {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 1.2rem;
     letter-spacing: -3px;
     color: #15F5BA;
     text-shadow: 0px 0px 7px #15F5BA;
@@ -861,10 +908,11 @@ footer {
     text-align: center;
 }
 
-.footer-cta a {
+.footer-cta a, li {
     text-decoration: none;
     color: #2C2C37;
     font-size: 12px;
+    list-style: none;
 }
 
 

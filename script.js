@@ -49,3 +49,63 @@ window.addEventListener("keydown", handleHeaderInactivity);
 window.addEventListener("touchstart", handleHeaderInactivity);
 
 handleHeaderInactivity();
+
+const form = document.getElementById('contact-form');
+const result = document.getElementById('form-result');
+const submitBtn = form.querySelector('.btn-send');
+
+if (form && result) {
+    form.addEventListener('submit', function(e) {
+        e.preventDefault(); // Mencegah halaman reload otomatis
+        
+        // Ubah tampilan tombol menjadi status loading ala game
+        submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> TRANSMITTING...';
+        submitBtn.disabled = true;
+
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        result.innerHTML = "Please wait...";
+        result.className = "form-result-message processing";
+
+        // Mengirim data ke server Web3Forms
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let res = await response.json();
+            if (response.status == 200) {
+                // JIKA SUKSES: Munculkan notifikasi bernuansa RPG!
+                result.innerHTML = "✔ QUEST ACCEPTED! Message sent successfully.";
+                result.className = "form-result-message success";
+                form.reset(); // Bersihkan semua kotak input
+            } else {
+                console.log(response);
+                result.innerHTML = res.message;
+                result.className = "form-result-message error";
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "❌ TRANSMISSION FAILED! Something went wrong.";
+            result.className = "form-result-message error";
+        })
+        .then(function() {
+            // Kembalikan teks tombol ke semula setelah selesai
+            submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> SEND MESSAGE';
+            submitBtn.disabled = false;
+            
+            // Hilangkan pesan notifikasi setelah 5 detik
+            setTimeout(() => {
+                result.innerHTML = "";
+                result.className = "form-result-message";
+            }, 5000);
+        });
+    });
+}
